@@ -3,4 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $("#products-tbl").DataTable()
+  $("#products-tbl").DataTable
+    bProcessing: true
+    bServerSide: true
+    sAjaxSource: "/products"
